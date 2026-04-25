@@ -1,0 +1,4 @@
+************* Module cat
+cat:1:0: F0001: No module named cat (fatal)
+************* Module shop
+shop.py:1:11: E0001: Parsing failed: 'invalid syntax (shop, line 1)' (syntax-error)
