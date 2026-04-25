@@ -1,0 +1,2 @@
+************* Module shop
+shop.py:1:45: E0001: Parsing failed: 'invalid syntax (shop, line 1)' (syntax-error)

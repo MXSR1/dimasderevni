@@ -1,4 +1,7 @@
-import os import sys items = [] def addItem(name,price): item={'name':name,'price':price}
-items.append(item) def getTotalPrice(): total=0 for i in items: total=total+i['price'] return total def
-printReceipt(): print("=== Чек ===") for i in items: print(i['name'], i['price']) s=getTotalPrice()
-print("Итого:", s) addItem("Хлеб", 45) addItem("Молоко", 89) addItem("Масло", 120) printReceipt()
+"""Модуль для работы с корзиной покупок.""" items = [] def add_item(name, price): """Добавить
+товар в корзину.""" item = {'name': name, 'price': price} items.append(item) def get_total_price():
+"""Вернуть суммарную стоимость всех товаров.""" total = 0 for item in items: total = total +
+item['price'] return total def print_receipt(): """Вывести чек на экран.""" print("=== Чек ===") for
+item in items: print(item['name'], item['price']) total = get_total_price() print("Итого:", total)
+add_item("Хлеб", 45) add_item("Молоко", 89) add_item("Масло", 120) print_receipt()
+
